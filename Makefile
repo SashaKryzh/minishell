@@ -36,7 +36,7 @@ $(OBJS_D):
 	@mkdir -p $(OBJS_D)
 
 $(NAME): $(OBJS)
-	$(CC) -o $(NAME) $(SRCS) $(MLX_SRCS) $(LIB_SRCS) $(INCLS)
+	$(CC) -o $(NAME) $(OBJS) $(LIB_SRCS) $(INCLS)
 
 $(OBJS_D)/%.o: %.c *.h libft/includes/*.h
 	$(CC) -o $@ -c $< $(INCLS)
