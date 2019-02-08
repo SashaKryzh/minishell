@@ -23,4 +23,10 @@ typedef struct		s_token
 	struct s_token	*next;
 }					t_token;
 
+/*
+**	Tests
+*/
+
+void	t_print_parsed(t_token *token)
+
 #endif

@@ -66,15 +66,6 @@ void	add_token(t_token **token, char *s, int len)
 	}
 }
 
-void	t_print_parsed(t_token *token)
-{
-	while (token)
-	{
-		ft_putendl(token->s);
-		token = token->next;
-	}
-}
-
 void	execute_op(t_token *token)
 {
 	if (ft_strequ("exit", token->s))
